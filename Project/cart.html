@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Dancing+Script:wght@700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&amp;display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/logo/logo.ico">
+    <link rel="stylesheet" href="style/styleForcart.css">
+    <link rel="stylesheet" href="style/styleCart.css">
+    <script src="https://kit.fontawesome.com/9a05771681.js" crossorigin="anonymous"></script>
+    <title>Cart</title>
+</head>
+
+<body>
+
+<!-- ____________________________________________ HEADER _______________________________________________________ -->
+  
+<header id="header">
+    <div id="nav">
+      <div id="logo">
+        <a href="Home.html"><img src="img/logo/logo.png" alt="test image" class="responsive"></a>
+      </div>
+      <div class="topnav" id="myTopnav">
+        <a href="Home.html">Home</a>
+        <a href="BooksPage.html">Books</a>
+        <a href="likes.html">Likes</a>
+        <a href="aboutus.html">AboutUs</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+      <div id="whitemode"> 
+        <h6>White Mode</h6>
+        <label class="switch">
+        <input type="checkbox" id="mode-toggle" White Mode> <span class="slider round"></span></label>
+      </div>
+      <div class="search-container">
+        <input type="text" name="search" id="searchInput" placeholder="Search..." class="search-input">
+        <a href="#" class="search-btn">
+        <i class="fas fa-search" aria-hidden="true"></i>      
+        </a>
+      </div>
+  </div>
+  </header>
+  
+  <!-- ____________________________________________ HEADER _______________________________________________________ -->
+
+
+        <div id="main">
+
+        <div class="cont">
+            <div class="cart">
+                <div class="top">
+                    <h2>Shopping Cart</h2>      
+                </div>
+
+
+
+
+                <div id="cartcontainer">
+
+
+                  <table cellspacing="0" class="table-head">
+                    <tr>
+                        <th width="150" class="head-img">Image</th>
+                        <th width="360">Name</th>
+                        <th width="150">Price</th>
+                        <th width="70">Delete</th>
+                    </tr>
+                </table>
+
+
+
+                    <table  cellspacing="0" id="cart-items">
+                      
+                    </table>
+
+                    <hr>
+
+                    
+                    
+                    
+                </div>
+            </div>
+            <div class="summary">
+                <div class="top">
+                    <h2>Order Summary</h2>
+                </div>
+                <div class="detail">
+                    <h2 id="itemB">0 Books</h2>
+                    <h2 id="total-price">0</h2>
+                </div>
+                <div style="margin-top: 30px; padding: 0 30px;">
+                <h2>Shipping</h2>
+                <input type="text" placeholder="Standard deilivery">
+                <div class="paypal-button-container"></div>
+            </div>
+            <hr>
+
+
+
+            <div style="padding: 0 10px; margin-bottom: 20px;">
+                
+            </div>
+
+            
+            </div>
+        </div>
+        </div>
+    
+
+        <script src="https://www.paypal.com/sdk/js?client-id=AU91bSoIYcUUNqZ5RxWGP6T4aaXZww5hTu6vb3QK9IujBKlLDhfroDSnsTVZU6hWQMWK6yXwqY-oQNsW"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/bookcartscript.js"></script>
+    <script src="script/scriptCart.js"></script>
+    <script>
+        const modeToggle = document.getElementById('mode-toggle');
+        const body = document.body;
+        modeToggle.addEventListener('click', () => {
+        body.classList.toggle('white-mode');
+        });
+      </script>
+    
+
+</body>
+</html>

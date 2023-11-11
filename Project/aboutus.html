@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Dancing+Script:wght@700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&amp;display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/logo/logo.ico">
+  <link rel="stylesheet" href="style/aboutus.css">
+  <script src="https://kit.fontawesome.com/9a05771681.js" crossorigin="anonymous"></script>
+  <title>AboutUs</title>
+</head>
+  
+<body>
+
+<!-- ____________________________________________ HEADER _______________________________________________________ -->
+  
+<header id="header">
+  <div id="nav">
+    <div id="logo">
+      <a href="Home.html"><img src="img/logo/logo.png" alt="test image" class="responsive"></a>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="Home.html">Home</a>
+      <a href="BooksPage.html">Books</a>
+      <a href="likes.html">Likes</a>
+      <a href="aboutus.html">AboutUs</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+    <div id="whitemode"> 
+      <h6>White Mode</h6>
+      <label class="switch">
+      <input type="checkbox" id="mode-toggle" White Mode> <span class="slider round"></span></label>
+    </div>
+    <div class="search-container">
+      <input type="text" name="search" id="searchInput" placeholder="Search..." class="search-input">
+      <a href="#" class="search-btn">
+      <i class="fas fa-search" aria-hidden="true"></i>      
+      </a>
+    </div>
+</div>
+</header>
+
+<!-- ____________________________________________ HEADER _______________________________________________________ -->
+
+<!-- ____________________________________________ ABOUTUS _______________________________________________________ -->
+
+    <div id="aboutus">
+    <div id="image" >
+        <img src="img/logo/logo.png">
+    </div>
+    <div id="paragrph">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat assumenda, quia alias omnis temporibus non necessitatibus eius nihil maiores aut ipsum eos minus ipsa quis sit. Aliquam ducimus libero doloremque?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta optio ad cupiditate fuga at voluptate voluptatum natus aliquid minus iste, ea dignissimos atque quasi non? Consequatur nisi laboriosam qui ullam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis incidunt qui officiis exercitationem ipsum praesentium. Ab, inventore fugit ipsum, temporibus consectetur, maiores voluptatum veritatis voluptate atque reprehenderit doloribus aliquid quaerat?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt necessitatibus, quasi repellendus alias sint temporibus, molestiae rem mollitia doloremque aliquid eius! Reiciendis, dicta cumque? Nesciunt atque repellendus tempora enim ipsam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex unde hic at nemo a libero ullam error dolore incidunt quae itaque, obcaecati quas illum, dolorem voluptatem. Quo temporibus qui ab.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, facere voluptate voluptates, similique repudiandae veniam dolorum vitae fugiat labore mollitia ratione rerum quo ipsam, doloribus sed eum dolorem laborum rem?
+        </p>
+    </div>
+  </div>
+ 
+<!-- ____________________________________________ ABOUTUS _______________________________________________________ -->
+
+<!-- ____________________________________________ FOOTER _______________________________________________________ -->
+    
+<footer>
+  <div class="footer-content">
+    <h3>ITI Books</h3>
+    <p>JS Project
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, praesentium quas sint accusantium dolorem, aliquam tempora voluptates at deserunt consectetur excepturi ratione adipisci. Accusantium animi totam labore perferendis incidunt corporis!
+    </p>
+    <ul class="socials">
+      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- ____________________________________________ FOOTER _______________________________________________________ -->
+
+
+
+
+<script src="https://hammerjs.github.io/dist/hammer.js"></script>
+<script src="script/contact.js"></script>
+<script>
+  const modeToggle = document.getElementById('mode-toggle');
+  const body = document.body;
+  modeToggle.addEventListener('click', () => {
+  body.classList.toggle('white-mode');
+  });
+</script>
+
+
+    
+
+</body>
+</html>
+

@@ -1,0 +1,114 @@
+.cont{
+    display: flex;
+    margin:  10px;
+}
+.cart{
+    width: 65%;
+    color: aliceblue;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 30px 0;
+}
+
+table{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.table-head{
+    color: aliceblue;
+    background-color: darkred;
+    font-size: 20px;
+    
+}
+
+.head-img{
+    text-align: left;
+    padding-left: 7px;
+}
+
+
+.summary{
+    border-radius: 15px;
+    background-color: rgba(109, 99, 99, 0.822);
+    width: 35%;
+    margin-left: 20px;
+}
+
+.detail{
+    margin: 10px 0;
+    padding: 0 10px;
+    color: white;
+    align-items: center;
+    background-color: darkred;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    padding: 7px;
+}
+
+button{
+    width: 100%;
+    border: 20px;
+    background-color: darkred;
+    padding: 20px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    color: whitesmoke;
+}
+
+.checkout{
+    width: 100%;
+    background-color: darkred;
+    color: whitesmoke;
+}
+
+button:hover, .checkout:hover{
+    background-color: darkorange;
+}
+
+
+.img-box{
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid blue;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+
+.fa-trash{
+    color: aqua;
+}
+
+.fa-trash:hover{
+    color: blue;
+}
+@media (max-width : 1000px) {
+    .summary{
+        display: none;
+    }
+}

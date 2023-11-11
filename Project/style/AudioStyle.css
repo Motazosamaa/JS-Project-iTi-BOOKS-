@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    /* box-sizing: border-box; */
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    /* box-sizing: border-box; */
+    background: #1F2122;
+    overflow-x: hidden;
+  }
+
+  #hbody{
+    width: 100%;
+
+  }
+
+
+  
+
+
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+
+
+
+#nav{
+  width: 90%;
+  background-color: transparent;
+  margin: auto;
+  display:flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  padding: 20px 15px;  
+ }
+
+ /* ____________________________________________________________________________ */
+
+#logo{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  margin: auto;
+  width: 10%;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+#logo img {
+  width: 60%;
+  height: auto;
+}
+
+/* ____________________________________________________________________________ */
+
+.topnav {
+  text-align: center;
+  background-color: transparent;
+  margin: auto;
+  width: 40%;
+  padding: 20px 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.topnav a {
+  position: relative;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  list-style: none;
+  margin: 0 6px;
+  padding: 6px 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.topnav a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: -5px;
+  left: -4px;
+  transform: scaleX(0);
+  background: #730F16 ;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.topnav a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+/* ____________________________________________________________________________ */
+
+
+.search-container{
+  height: 30px;
+  border-radius: 30px;
+  width: 20%;
+  display: flex;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  padding: 20px 15px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.8s;
+  
+}
+
+.search-container:hover{
+  background-color: #730F16;
+}
+
+.search-container:hover > .search-input{
+  width: 400px;
+}
+
+.search-container .search-input{
+  background: transparent;
+  border: none;
+  outline:none;
+  width: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.8s;
+}
+
+.search-container .search-btn .fas{
+  color: #730F16;
+}
+
+@keyframes hoverShake {
+0% {transform: skew(0deg,0deg);}
+25% {transform: skew(5deg, 5deg);}
+75% {transform: skew(-5deg, -5deg);}
+100% {transform: skew(0deg,0deg);}
+}
+
+.search-container:hover{
+animation: hoverShake 0.15s linear 3;
+}
+
+
+/* ____________________________________________________________________________ */
+
+/* -----------------------------------------slider & white mode -------------------------------------------   */
+/* -----------------------------------------slider & white mode -------------------------------------------   */
+/* -----------------------------------------slider & white mode -------------------------------------------   */
+
+
+  
+  #whitemode{
+    text-align: center;
+    background-color: transparent;
+    width: 10%;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  }
+  #whitemode h6{
+    padding: 0px;
+    margin: 5px;
+    color: white;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    
+    margin: auto;
+    
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #730F16;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #730F16;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .white-mode {
+    background-color: #fff;
+    color: #1F2122;
+  }
+  .white-mode h2 {
+    
+    color: #1F2122;
+  }
+  .white-mode h1 {
+    color: #1F2122;
+  }
+  
+  .white-mode .topnav a{
+    color: #1F2122;
+  }
+  .white-mode #whitemode h6{
+    color: #1F2122;
+  }
+
+  /* ----------------------------------------- END slider & white mode -------------------------------------------   */
+  /* ----------------------------------------- END slider & white mode -------------------------------------------   */
+  /* ----------------------------------------- END slider & white mode -------------------------------------------   */
+
+
+
+/* ___________________________________________________________________________________________________________________________ */
+  
+  @media screen and (max-width: 1000px) {
+    
+    #nav{
+      width: 90%;
+      padding: 10px 5px;  
+     }
+
+     #logo{
+      width:25%;
+      margin-bottom: 10px;
+      padding: 10px 5px;
+    }
+    
+    .topnav{
+      width: 100%;
+      margin: auto;
+      margin-bottom: 10px;
+      padding: 15px 10px;
+    }
+    .topnav a{
+      font-size: 15px;
+    }
+     #whitemode{
+
+      margin: auto;
+      width: 25%;
+      padding: 10px 5px;
+     }
+      .slider{
+        width: 55px;
+        height:28px;
+        margin: auto;
+      }
+     
+     .slider:before{
+      width:20px;
+      height: 20px;
+     }
+
+     .search-container{
+      display: none;
+    }
+  }
+  
+  
+/* ___________________________________________________________________________________________________________________________ */
+
+
+
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+
+
+
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+
+
+
+
+
+.audioPlayer{
+    margin-left: 200px;
+    width: 900px;
+    height: 800px;
+    margin: auto;
+    border-radius: 50px;
+    background-color: transparent;
+    box-shadow: 0 0px 100px #730F16;
+    overflow: hidden;
+    padding: 20px;
+    color: #EEEEEE;
+    
+    
+    }
+    .audioName,.authorName{
+    text-align: center;
+    text-transform: capitalize;
+    
+    
+    }
+    .audioName{
+        font-size: 40px;
+        font-weight: 500px;
+        margin-bottom: 10px;
+    }
+    .authorName
+    {
+        font-size: 20px;
+    }
+    
+    .disk
+    {
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow:0 0 0 10px #730F16;
+    
+    animation: rotate 20s linear infinite;
+    animation-play-state: paused;
+    
+    
+    }
+    
+    .disk.play{
+    
+        animation-play-state:running;
+    
+    }
+    .disk::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #d3280a;
+    
+    }
+    
+    .audioSlider{
+    
+        width: 100%;
+        position: relative;
+    
+    
+    }
+    .bar{
+    
+        appearance: none;
+    
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #730F16;
+    cursor: pointer;
+    overflow: hidden;
+    }
+    
+    .bar::-webkit-slider-thumb{
+    appearance: none;
+    width: 1px;
+    height: 20px;
+    background-color: #730F16;
+    box-shadow: -400px 0 0 400px #fff;
+    
+    
+    }
+    
+    .audioDuration,.timeNow{
+    
+        font-size: 14px;
+    
+    
+    }
+    .audioDuration
+    {
+    position: absolute;
+    right: 0;
+    
+    
+    }
+    
+    .controls
+    {   
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px    ;
+    
+    
+    }
+    .playBtn
+    {
+    
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #730F16;
+    cursor: pointer;
+    border: none;
+    
+    }
+    
+    .playBtn span{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #000000;
+    transition: 0.5s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    
+    
+    }
+    .playBtn span:nth-child(2){
+    left: 55%;
+    transform-origin: center;
+    
+    }
+    
+    .playBtn.pause span:nth-child(2)
+    {
+    transform: translateY(-50%) scaleY(0);
+    
+    
+    
+    
+    }
+    .playBtn.pause span:nth-child(1)
+    {
+        width: 35%;
+        left: 53%;
+        transform: translate(-50%,-50%);
+        border-radius: 0;
+        clip-path: polygon(0 0, 100% 50%, 100% 50%, 0 100%);
+    }
+    .playBtn.pause{
+    
+    
+        animation: pulse 2s linear infinite;
+    }
+    @keyframes pulse{ 
+        0%{
+            box-shadow: 0;
+        }
+        50%{
+            box-shadow: 0 0 0 5px rgb(60, 60, 60);
+            box-shadow: 0 0 0 5px rgb(60, 60, 60);
+        }
+        100%{
+            box-shadow: 0 0 0 5px  gray;
+            box-shadow: 0 0 0 5px  gray;
+        }
+    
+    
+    }
+    
+    .btn{
+        width: 40px;
+        height: 40px;
+        background-color: #730F16;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        }
+    
+    
+    @keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+    
+    }
+    
+    
+    
+    .logoimg {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        height: 150px;
+        width: 100vw;         
+    }
+    .logoimg img {
+        height: 150px;
+        display: block;
+        margin: auto;
+    }
+    
+    
+    .navbar{
+        grid-row-start: 2;
+        grid-row-end: 3; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+    }
+    .nav-links{
+        display: flex;
+        align-items: center;
+        background: #fff;
+        padding: 20px 15px;
+        border-radius: 12px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+    .nav-links li{
+        list-style: none;
+        margin: 0 12px;
+    }
+    .nav-links li a{
+        position: relative;
+        color: #333;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 6px 0;
+        text-decoration: none;
+    }
+    .nav-links li a:before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 0%;
+        background: #730F16;
+        border-radius: 12px;
+        transition: all 0.4s ease;
+    }
+    .nav-links li a:hover:before{
+        width: 100%;
+    }
+    .nav-links li.center a:before{
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .nav-links li.upward a:before{
+      width: 100%;
+      bottom: -5px;
+      opacity: 0;
+    }
+    .nav-links li.upward a:hover:before{
+      bottom: 0px;
+      opacity: 1;
+    }
+    .nav-links li.forward a:before{
+      width: 100%;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.4s ease;
+    }
+    .nav-links li.forward a:hover:before{
+      transform: scaleX(1);
+      transform-origin: left;
+      
+    }
+
+    @media  (max-width:1000px) {
+      .audioPlayer{
+        width: 90%;
+
+      }
+    }
+
+
+
+
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+
+
+

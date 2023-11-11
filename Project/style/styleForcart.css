@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    /* box-sizing: border-box; */
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    /* box-sizing: border-box; */
+    background: #1F2122;
+    overflow-x: hidden;
+  }
+
+  #hbody{
+    width: 100%;
+
+  }
+
+
+  
+
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+
+
+
+#nav{
+  width: 90%;
+  background-color: transparent;
+  margin: auto;
+  display:flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  padding: 20px 15px;  
+ }
+
+ /* ____________________________________________________________________________ */
+
+#logo{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  margin: auto;
+  width: 10%;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+#logo img {
+  width: 60%;
+  height: auto;
+}
+
+/* ____________________________________________________________________________ */
+
+.topnav {
+  text-align: center;
+  background-color: transparent;
+  margin: auto;
+  width: 40%;
+  padding: 20px 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.topnav a {
+  position: relative;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  list-style: none;
+  margin: 0 6px;
+  padding: 6px 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.topnav a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: -5px;
+  left: -4px;
+  transform: scaleX(0);
+  background: #730F16 ;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.topnav a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+/* ____________________________________________________________________________ */
+
+
+.search-container{
+  height: 30px;
+  border-radius: 30px;
+  width: 20%;
+  display: flex;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  padding: 20px 15px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.8s;
+  
+}
+
+.search-container:hover{
+  background-color: #730F16;
+}
+
+.search-container:hover > .search-input{
+  width: 400px;
+}
+
+.search-container .search-input{
+  background: transparent;
+  border: none;
+  outline:none;
+  width: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.8s;
+}
+
+.search-container .search-btn .fas{
+  color: #730F16;
+}
+
+@keyframes hoverShake {
+0% {transform: skew(0deg,0deg);}
+25% {transform: skew(5deg, 5deg);}
+75% {transform: skew(-5deg, -5deg);}
+100% {transform: skew(0deg,0deg);}
+}
+
+.search-container:hover{
+animation: hoverShake 0.15s linear 3;
+}
+
+
+/* ____________________________________________________________________________ */
+
+/* -----------------------------------------slider & white mode -------------------------------------------   */
+/* -----------------------------------------slider & white mode -------------------------------------------   */
+/* -----------------------------------------slider & white mode -------------------------------------------   */
+
+
+  
+  #whitemode{
+    text-align: center;
+    background-color: transparent;
+    width: 10%;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  }
+  #whitemode h6{
+    padding: 0px;
+    margin: 5px;
+    color: white;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    
+    margin: auto;
+    
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #730F16;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #730F16;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .white-mode {
+    background-color: #fff;
+    color: #1F2122;
+  }
+  .white-mode h2 {
+    
+    color: #1F2122;
+  }
+  .white-mode h1 {
+    color: #1F2122;
+  }
+  
+  .white-mode .topnav a{
+    color: #1F2122;
+  }
+  .white-mode #whitemode h6{
+    color: #1F2122;
+  }
+  .white-mode td{
+    color: #1F2122;
+  }
+
+  /* ----------------------------------------- END slider & white mode -------------------------------------------   */
+  /* ----------------------------------------- END slider & white mode -------------------------------------------   */
+  /* ----------------------------------------- END slider & white mode -------------------------------------------   */
+
+
+
+/* ___________________________________________________________________________________________________________________________ */
+  
+  @media screen and (max-width: 1000px) {
+    
+    #nav{
+      width: 90%;
+      padding: 10px 5px;  
+     }
+
+     #logo{
+      width:25%;
+      margin-bottom: 10px;
+      padding: 10px 5px;
+    }
+    
+    .topnav{
+      width: 100%;
+      margin: auto;
+      margin-bottom: 10px;
+      padding: 15px 10px;
+    }
+    .topnav a{
+      font-size: 15px;
+    }
+     #whitemode{
+
+      margin: auto;
+      width: 25%;
+      padding: 10px 5px;
+     }
+      .slider{
+        width: 55px;
+        height:28px;
+        margin: auto;
+      }
+     
+     .slider:before{
+      width:20px;
+      height: 20px;
+     }
+
+     .search-container{
+      display: none;
+    }
+  }
+  
+  
+/* ___________________________________________________________________________________________________________________________ */
+
+
+
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+
+
+
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+/* _________________________________________________________________________________ */
+
+
+
+
+
+.icon{
+  max-width: 70px;
+  max-height: 70px;
+  border-radius: 50%;
+  text-align: left;
+  
+}
+
+
+.fa-trash{
+  color: rgb(155, 25, 16);
+}
+
+.fa-trash:hover{
+  color: rgb(54, 192, 8);
+}
+table td {
+  
+  font-size: 20px;
+  text-align: center;
+  
+
+}
+
+
+
+
+
+
+.iconcontainer
+{
+text-align: left;
+
+
+}
+
+
+
+
+
+
